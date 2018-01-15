@@ -30,10 +30,22 @@ div.table-name {
 
   .table-open {
     padding-left: 26px;
-    cursor: pointer;
 
     &:hover {
       background: fade(@redash-gray, 10%);
+
+      .zmdi {
+        color: fade(@redash-gray, 90%);
+        display: inline-block;
+        float: right;
+        padding: 2px 10px;
+        cursor: pointer;
+      }
+    }
+
+    .zmdi {
+      display: none;
+      font-weight: 600;
     }
   }
 }
